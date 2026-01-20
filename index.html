@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width-device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="clrpalette.css">
+        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    </head>
+    <body>
+
+        <div id="header">
+            
+            <!-- HEADER -->
+            <div class="container">
+
+                <nav>
+                    <!--<div class = "blackribbon">    </div>-->
+
+                    <img src="images/LogoInactive.png" onmouseover= "this.src='images/LogoActive.png';" onmouseout="this.src='images/LogoInactive.png';" class = "logo">
+                    
+                    <ul>
+                        <li> <a href="#header">Home</a></li>
+                        <li> <a href="#experience">Experience</a></li>
+                        <li> <a href="#academics">Academics</a></li>
+                        <li> <a href="#">Projects</a></li>
+                    </ul>
+
+                </nav>
+                <div class ="ribbon"></div>
+            </div>
+            
+            <!-- ABOUT SECTION -->
+            <div id = "about">
+            <div class="body-text">
+                <div class = "row">
+                    <div class="title-text"> <!--sets as col 1-->
+                        <p class="vanilla-text"> Cleared for approach, </p>
+                        <h1 class = "name-title">I'm <span>ARNAB</span></h1>
+                        <p class = "proftitle-text"> BSc. Mech. Eng. • P.Eng. @ OIQ</p>
+                        <p class = "desc-text"> Systems Engineer & Software Development 
+                            <br> English • Français </p>
+                    
+                        <div class ="tab-titles">
+                            <p class="tab-links"><a class ="jumplink" href="#experience">Experience</a></p>
+                            <p class="tab-links"><a class ="jumplink" href="#academics">Academics</a></p>
+                            <p class="tab-links">Projects</p>
+                        </div>
+                    </div>
+                    
+                    <div class ="col2"><!--sets as col 2-->
+                        <div class="profile-pic-wrapper"> 
+                            <img src="images/ArnabSinha.png" class="profile-pic">
+                        </div>
+                        <div class = "clickicon">
+                            <a href="Documents/Arnab_Sinha_Generic_2.pdf" download ="ArnabSinha_Resume"  class = "downloadcv">
+                                <img src="images/CVDownloadInactive.png" onmouseover= "this.src='images/CVDownloadActive.png';" onmouseout="this.src='images/CVDownloadInactive.png';" class = "cv">
+                            </a>
+                            <!-- using target="_blank" will pop open a new page!-->
+                            <a href="https://www.linkedin.com/in/arnab-sinha-eng-973384194/" target="_blank" class = "linkedinhyper">
+                                <img src="images/LinkedInInactive.png" onmouseover= "this.src='images/LinkedInActive.png';" onmouseout="this.src='images/LinkedInInactive.png';" class = "linkedin">
+                            </a>
+                            <a href="mailto:arnab.sinha@mail.mcgill.ca" target="_blank" class = "mailhyper">
+                                <img src="images/MailInactive.png" onmouseover= "this.src='images/MailActive.png';" onmouseout="this.src='images/MailInactive.png';" class = "mail">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+            
+        </div>
+
+
+        <!-- EXPERIENCE SECTION -->
+        <div id="experience">
+        <div class="experience-container">
+            <div class ="timeline-work">
+                <h1 class="heading">
+                   <i class='bx bxs-briefcase' ></i>
+                    Experience
+                </h1>
+
+                <div class = "timeline-box">
+                    <div class = "content-frame">
+                        <img src="images/Alaska.png"> 
+
+                        <div class = "content-box">
+                            <h3> Flight Simulator Engineer <span>@ Alaska Airlines </span></span></h3>
+                            <div class ="date">
+                                <i class ="bx bx-calendar"></i>
+                                2025-2026
+                            </div>
+                            <p>
+                                <span> Flight Operations </span> role critical to pilot training and air safety.
+                                <br><br>
+                                </span>Device owner for A330 CAE 7000XR FFS. <br>
+                                Full Flight Simulators (FFS): CAE-Lockheed A320, CAE A330, CAE B787, FlightSafety B717 <br>
+                                Flight Training Devices (FTD): L3Harris B717, A330, A320, CAE B787 XR500<br> <br>
+                                • Assisted <span>FAA Qualification</span> for A320,A330,B787,B717 and <span>FAA certification</span> for B787 FTD <br>
+                                • <span>Coordinated with OEMs </span> and suppliers (L3Harris) to validate software fixes and regression behavior for 11 crew-impact discrepency reports. Regression testing. <br>
+                                • Supported flight training operations for site simulator reliability greater 98.5% <br>
+                                • Generating QTGs (qualification test guides), implementing <span>software fix/tuning</span>, troubleshooting hardware (calibrations) <br>
+                                • Perform flyouts for <span>verification/validation</span> of the sim. to ensure quality pilot training. <br>
+                            </p>
+                        </div>
+                        
+                    </div>
+
+
+
+                    <div class = "content-frame">
+                        <img src="images/CAE.png"> 
+
+                        <div class = "content-box">
+                            <h3> Aircraft Systems - Software Engineer <span>@ CAE </span></span></h3>
+                            <div class ="date">
+                                <i class ="bx bx-calendar"></i>
+                                2023-2025
+                            </div>
+                            <p>
+                                <span>Technical specialist </span> point of contact for A330-350-380 Ancillary systems (Air Cond, Hydraulics, Fuel, Fire, etc.)
+                                <br> <br>
+                                 
+                                • <span>Software development in C, C++ </span> for Ancillary, Navigation/Flight-Surveillance and Engine system. <br>
+                                • Coordinate with OEMs (Honeywell, Thales) for avionics software troubleshooting. <br>
+                                • Analyze digital logic <span>wiring diagrams</span> for flight system troubleshooting <br>
+                                • Consistent delivery of sprint (> 85%) and clearing <span>JIRA backlog</span>. Participate in <span>Agile scrum</span>. <br> <br>
+                                Projects: <br>
+                                • Developed industry’s first
+                                <a class = "inline-hyper" target="_blank" href="https://www.emirates.com/media-centre/emirates-crew-trained-to-be-future-fit-and-a350-ready/"">  Pilot Support Systems (PSS) </a> for the brief-debrief station for a350 Emirates. 
+                                <br> 
+                                • <span>Authored "Acceptance Test Manual" (ATM)</span> chapter for the refuel test procedures for A330 Malaysian, after testing, verifying, and validating with test engineers.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class = "content-frame">
+                        <img src="images/McGill.png"> 
+
+                        <div class = "content-box">
+                            <h3> Research Assistant <span>@ McGill University </span></span></h3>
+                            <div class ="date">
+                                <i class ="bx bx-calendar"></i>
+                                2020-2023
+                            </div>
+                            <p>
+                                <span>Team Lead </span> for stratospheric research.
+                                <br> <br>
+                                • Coordinate with Canadian Space Agency, Transport Canada, NavCanada to <span>launch avionics payload to 120,000 ft, and recover. </span> Successful 5 out of 5 times. <br>
+                                • Soldering electronics, integrating avionics, calibrating sensors, and PCB’s <br>
+                                • Developed <span>flight prediction softwares integrating wind (Python)</span>, documentating and presenting results <br>
+                                • Numerical solutions (MATLAB) for <span>rocket engine Isp calculations (MATLAB)</span> <br>
+                                • Modeling (Python, MATLAB), <span>3-DOF trajectory simulations </span> for Mars aerocapture.<br> 
+                                • <span>Authored 2 journal publications</span> which were presented at conferences (see Academic section below).
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                    
+            </div>
+        </div>
+        </div>
+
+
+        <!-- ACADEMICS SECTION -->
+        <div id="academics">
+        <div class="academics-container">
+            <div class ="academics-box">
+                <h1 class="heading">
+                   <i class='bx bx-book' ></i>
+                    Academics
+                </h1>
+        </div>
+        </div>
+        
+    </body>
+
+</html>
