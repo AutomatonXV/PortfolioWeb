@@ -212,7 +212,7 @@ nav ul li a:hover::after{
 
 #experience{ /*first page background*/
     width: 100%;
-    height: 200vh;
+    height: auto;
     background-image: url(images/Background3.jpg);
     background-size: cover;
     background-position: center;
@@ -301,7 +301,7 @@ nav ul li a:hover::after{
 
 #academics{ /*first page background*/
     width: 100%;
-    height: 200vh;
+    height: auto;
     background-image: url(images/Background3.jpg);
     background-size: cover;
     background-position: center;
@@ -333,6 +333,7 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     background-color: var(--boxbg);
     border-radius: 20px 20px;
+    margin-bottom: 10px;
 }
 .edu-col1{
     flex-basis: 25%; /*sets the size of the column*/
@@ -498,6 +499,65 @@ nav ul li a:hover::after{
 }
 .edu-pub-container:hover .edu-pub-rsch-findings{
     opacity: 100%;
+}
+
+.edu-piloting{
+    overflow:auto;
+}
+.edu-pilot-stats{
+    margin-top: 5px;
+    font-size: 1.15rem;
+    text-align:center;
+    color: var(--primary)
+}
+.edu-pilot-stats span{
+    font-size: 1.5rem;
+    color: var(--tertiary)
+}
+.carousel{
+    width: 100%;
+    display:flex;
+    overflow: hidden;
+    margin-top: 10px;
+    
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    animation: scrolling 15s infinite linear;
+
+}
+.card{
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    top: -150px;
+    text-align:center;
+    align-content: center;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card img{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px 20px;
+    position: absolute;
+}
+
+@keyframes scrolling{
+    from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* PROJECTS PAGE */
