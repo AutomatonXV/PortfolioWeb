@@ -220,7 +220,7 @@ nav ul li a:hover::after{
 }
 
 .experience-container{
-    padding: 80px 10%; /*10px top and bot, 10% left and right */
+    padding: 30px 10%; /*10px top and bot, 10% left and right */
     display:flex;
     justify-content: center;
     align-items: center;
@@ -290,6 +290,9 @@ nav ul li a:hover::after{
     color: var(--secondary)
 }
 
+.inline-hyper{
+    color: var(--hyperlink)
+}
 
 
 
@@ -306,13 +309,14 @@ nav ul li a:hover::after{
 }
 
 .academics-container{
-    padding: 80px 10%; /*10px top and bot, 10% left and right */
+    padding: 30px 10%; /*10px top and bot, 10% left and right */
     display:flex;
 }
 
 .academics-box{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax (300px, lfr));
+    width: 100%;
 }
 
 .heading{
@@ -323,7 +327,178 @@ nav ul li a:hover::after{
     gap: 1rem;
 }
 
+.edu-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--boxbg);
+    border-radius: 20px 20px;
+}
+.edu-col1{
+    flex-basis: 25%; /*sets the size of the column*/
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center; 
+    
+}
 
+.edu-image-row img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px 20px;
+}
+
+
+.edu-institution{
+    font-size: 1.5rem;
+    color: var(--tertiary)
+}
+.edu-date{
+    font-size: 1.25rem;
+    color: var(--primary)
+}
+
+
+.edu-col2{
+    flex-basis: 70%; /*sets the size of the column*/
+    margin-top: 2.5%;
+    margin-left: 4%;
+    margin-bottom: 2.5%;
+    font-size: 1.0rem;
+    
+}
+
+.edu-degree span{
+    color: var(--tertiary)
+}
+
+.edu-publications{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    display:grid;
+}
+
+.edu-pub-title{
+    width: 100%;
+}
+
+.edu-pub-title h2{
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+.edu-pub-title h2::after{
+    background-color: var(--secondary);
+    width: 50%;
+    height: 2px;
+    bottom: -2px;
+    left: 25%; /*centering: (1-width)/2*/
+    content: '';
+    position: absolute;
+    display:flex;
+}
+
+.edu-pub-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edu-pub-col{
+    
+    flex-basis: 45%;
+    font-size: 1rem;
+    text-align: center;
+
+    /* background-color: var(--boxbg);
+    border: 3px solid var(--secondary);
+    border-radius: 10px 10px; */
+}
+.edu-pub-col-title{
+    font-size: 1.15rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+.edu-pub-col-doi{
+    font-size: 1rem;
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+.edu-pub-container{
+    position: relative;
+    margin-top: 20px;
+}
+.edu-pub-icon{
+    width: 95%;
+    height: 95%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.edu-pub-backdrop{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:2.5%; /* move it from left by (1-width)/2*/
+
+    width: 0%;
+    height: 50%;
+    
+    background:  var(--backdrop);
+    opacity: 0%;
+    transition: 0.5s;
+}
+.edu-pub-rsch-title{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+
+    width: 100%;
+    height: 25%;
+    color: var(--tertiary);
+
+    opacity: 0%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+   
+    transition: 0.5s
+
+}
+
+.edu-pub-rsch-findings{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+
+    width: 90%;
+    height: 25%;
+    color: var(--secondary);
+
+    opacity: 0%;
+    font-size: 0.75rem;
+    font-weight: light;
+    text-align: left;
+   
+    transition: 0.5s
+}
+
+.edu-pub-rsch-findings span{
+    color: var(--primary)
+}
+
+.edu-pub-container:hover .edu-pub-backdrop{ /*hover the container to apply effects to textbox*/
+    opacity: 100%;
+    width: 95%;
+}
+.edu-pub-container:hover .edu-pub-rsch-title{
+    opacity: 100%;
+}
+.edu-pub-container:hover .edu-pub-rsch-findings{
+    opacity: 100%;
+}
 
 /* PROJECTS PAGE */
 
