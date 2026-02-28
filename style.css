@@ -175,7 +175,7 @@ nav ul li a:hover::after{
 
 .jumplink{
     text-decoration: none; /* removes underline */
-    color: var(--secondary);
+    color: var(--accent);
     transition: color 0.5s ease-in-out;
 }
 
@@ -189,7 +189,7 @@ nav ul li a:hover::after{
     content: '';
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, var(--primary), var(--secondary));
+    background: linear-gradient(to right, var(--primary), var(--accent));
     position: absolute;
     left: 0%;
     bottom: -6px;
@@ -572,13 +572,14 @@ nav ul li a:hover::after{
 }
 
 .projects-container{
-    padding: 80px 10%; /*10px top and bot, 10% left and right */
+    padding: 30px 10%; /*10px top and bot, 10% left and right */
     display:flex;
 }
 
 .projects-box{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax (300px, lfr));
+    width: 90%;
 }
 
 .heading{
@@ -587,4 +588,60 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+
+.proj-all{
+    font-size: 1.75rem;
+    padding-left: 5%;
+    
+}
+.proj-summary{
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.proj-details{
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin-bottom: 10px;
+}
+
+.proj-answer{
+    display: flex;
+    
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-start;
+    width: 100%;
+    
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+    border-top: 1px solid white
+}
+
+.proj-answer-col1{
+    flex-basis: 60%;
+}
+
+.proj-answer-col2{
+    flex-basis: 35%
+}
+.proj-answer-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.proj-answer-col2 h2{
+    font-size: 1.5rem;
+    color: var(--secondary)
+}
+
+.proj-answer-col2 p{
+    font-size: 1rem;
+    text-align: left;
 }
